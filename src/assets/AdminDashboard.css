@@ -1,0 +1,12 @@
+.modal-backdrop {
+  z-index: 0 !important;
+}
+
+.modal-content {
+  border-radius: 12px;
+  border: 1px solid #ddd;
+}
+
+.table th, .table td {
+  vertical-align: middle;
+}

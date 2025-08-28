@@ -1,0 +1,195 @@
+/* Root Theme Vars */
+:root {
+  --vip-primary: #0d6efd;
+  --vip-dark: #000814;
+  --vip-light: #f8f9fa;
+  --vip-card-radius: 16px;
+}
+
+.event-details-vip-page {
+  background: var(--vip-light);
+  color: #212529;
+}
+
+/* Hero */
+.vip-event-hero {
+  position: relative;
+  min-height: 360px;
+  background-size: cover;
+  background-position: center;
+  padding: 80px 0 60px;
+  overflow: hidden;
+}
+.vip-event-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+}
+.vip-event-title,
+.vip-event-subtitle,
+.vip-breadcrumb,
+.vip-meta-badges {
+  position: relative;
+  z-index: 2;
+}
+.vip-event-hero .vip-event-subtitle {
+  max-width: 600px;
+}
+
+/* Breadcrumb */
+.vip-breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+  color: #fff;
+}
+.vip-breadcrumb .breadcrumb-item a {
+  color: #adb5bd;
+  text-decoration: none;
+}
+.vip-breadcrumb .breadcrumb-item.active {
+  color: #fff;
+}
+
+/* Meta Badges */
+.vip-meta-badges .badge {
+  font-size: 0.85rem;
+  padding: 0.45em 0.75em;
+}
+
+/* Section Cards */
+.vip-section-card {
+  border-radius: var(--vip-card-radius);
+}
+.vip-section-card .card-body {
+  padding: 2rem;
+}
+.vip-section-card h3 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+/* Markdown */
+.vip-markdown p {
+  margin-bottom: 1rem;
+}
+.vip-markdown strong {
+  color: var(--vip-dark);
+}
+.vip-markdown code {
+  background: rgba(13,110,253,0.1);
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-size: 90%;
+}
+
+/* Gallery */
+.vip-gallery-grid img {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.vip-gallery-grid img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 0 3px var(--vip-primary);
+}
+.vip-gallery-thumb-btn {
+  border: none;
+  padding: 0;
+  background: none;
+  display: block;
+  width: 100%;
+}
+
+/* Lightbox */
+.vip-lightbox-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1050;
+}
+.vip-lightbox-content {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+}
+.vip-lightbox-content img {
+  max-height: 80vh;
+  width: auto;
+}
+.vip-lightbox-close,
+.vip-lightbox-prev,
+.vip-lightbox-next {
+  position: absolute;
+  background: rgba(0,0,0,0.7);
+  color: #fff;
+  border: none;
+  font-size: 2rem;
+  line-height: 1;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.vip-lightbox-close { top: -44px; right: -44px; border-radius: 50%; }
+.vip-lightbox-prev { left: -60px; top: 50%; transform: translateY(-50%); border-radius: 50%; }
+.vip-lightbox-next { right: -60px; top: 50%; transform: translateY(-50%); border-radius: 50%; }
+
+@media (max-width: 576px) {
+  .vip-lightbox-close { top: 8px; right: 8px; }
+  .vip-lightbox-prev { left: 8px; top: auto; bottom: 8px; transform: none; }
+  .vip-lightbox-next { right: 8px; top: auto; bottom: 8px; transform: none; }
+}
+
+/* Organizer */
+.vip-organizer-card {
+  border-radius: var(--vip-card-radius);
+}
+.vip-organizer-logo {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+}
+
+/* Booking Sidebar */
+.vip-sticky-sidebar { position: sticky; top: 100px; }
+.vip-book-card {
+  border-radius: var(--vip-card-radius);
+}
+.vip-seat-progress .progress { height: 20px; border-radius: 10px; overflow: hidden; }
+.vip-seat-progress .progress-bar { font-size: 0.85rem; }
+
+/* Section Nav */
+.vip-section-nav .nav-link {
+  padding: 0.5rem 0.75rem;
+  color: #0d6efd;
+  text-decoration: none;
+}
+.vip-section-nav .nav-link:hover {
+  background: rgba(13,110,253,0.1);
+  border-radius: 4px;
+}
+
+/* Related Events */
+.vip-related-events h3 {
+  font-weight: 700;
+}
+.vip-related-card img {
+  height: 160px;
+  object-fit: cover;
+  border-top-left-radius: var(--vip-card-radius);
+  border-top-right-radius: var(--vip-card-radius);
+}
+
+/* Responsive Tweaks */
+@media (max-width: 992px) {
+  .vip-event-hero { padding: 60px 0 40px; }
+  .vip-section-card .card-body { padding: 1.5rem; }
+  .vip-sticky-sidebar { position: static; top: auto; }
+}
+
+@media (max-width: 576px) {
+  .vip-event-title { font-size: 1.75rem; }
+  .vip-event-subtitle { font-size: 1rem; }
+  .vip-section-card .card-body { padding: 1.25rem; }
+}

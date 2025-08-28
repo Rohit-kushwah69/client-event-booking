@@ -1,0 +1,141 @@
+.footer {
+    background: #111;
+    color: white;
+    padding: 50px 0 0 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.footer h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+    color: #bbb;
+    font-size: 14px;
+}
+
+.footer ul li i {
+    margin-right: 10px;
+    color: #0d6efd;
+}
+
+.footer ul li a {
+    color: #bbb;
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.bottom_form {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.enter {
+    flex: 1;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 4px;
+}
+
+.sub_btn {
+    background-color: #0d6efd;
+    color: #111;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+.sub_btn:hover {
+    background-color: #0d6efd;
+}
+
+.social_icon {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social_icon li {
+    display: inline-block;
+}
+
+.social_icon a {
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.social_icon a:hover {
+    color: #0d6efd;
+}
+
+.copyright {
+    margin-top: 40px;
+    text-align: center;
+    color: #888;
+    font-size: 13px;
+    border-top: 1px solid #333;
+    padding-top: 15px;
+}
+
+.col-md-4 {
+    text-align: center;
+}
+
+/* Base link style */
+.link_menu li a {
+    color: #0d6efd;
+    text-decoration: none;
+    font-weight: normal;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.link_menu li a:hover {
+    color: #0d6efd;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Active NavLink styling */
+.link_menu li a.active {
+    color: #0d6efd;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.copyright {
+    margin-top: 60px;
+    padding: 20px 0;
+    background-color: #fff;
+    border: #0d6efd solid 3px;
+    border-right: inherit;
+    border-left: inherit;
+}
+
+.copyright p {
+    color: #000;
+    font-size: 18px;
+    line-height: 22px;
+    /* text-align: center; */
+    /* border-top: #a3aec6 solid 1px; */
+    padding-top: 25px;
+    font-weight: normal;
+}
