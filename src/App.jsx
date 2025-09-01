@@ -16,10 +16,13 @@ import Profile from "./components/pages/Profile";
 import ChangePassword from "./components/pages/ChangePassword";
 import Header from "./components/layouts/Header";
 import Footer from "./components/layouts/Footer";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
+
     <AuthProvider>
+      <ScrollToTop />
       <BrowserRouter>
         <Header />
         <Routes>
