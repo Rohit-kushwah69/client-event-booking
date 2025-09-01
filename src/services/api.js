@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const API = axios.create({
-  baseURL: 'https://server-event-booking.onrender.com',
+  baseURL: 'https://server-event-booking.onrender.com/api',
   withCredentials: true, // for cookies
 });
 

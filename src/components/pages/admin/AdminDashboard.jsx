@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import API from '../../../services/api';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import logoImage from "../../../../public/colorlogo.png"
 
 function AdminDashboard() {
   const [events, setEvents] = useState([]);
@@ -97,7 +98,7 @@ function AdminDashboard() {
 
       <div className="d-flex justify-content-between align-items-center mb-4">
         <h2>Admin Dashboard</h2>
-        <img src="https://pninfosys.com/assets/colorlogo-BagIKm6w.png" alt="Logo" style={{ height: '50px' }} />
+        <img src="/colorlogo.png" alt="Logo" style={{ height: '50px' }} />
       </div>
 
       {/* Events Section */}
