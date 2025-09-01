@@ -22,8 +22,8 @@ function App() {
   return (
 
     <AuthProvider>
-      <ScrollToTop />
       <BrowserRouter>
+        <ScrollToTop />
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
